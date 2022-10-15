@@ -21,6 +21,6 @@ public class Degre3
 
 
         System.out.println(polynome);
-        System.out.println(Math.pow(x,3));
+        //System.out.println(Math.pow(x,3));
     }
 }

@@ -1,3 +1,5 @@
+package java_bases;
+
 public class Vitesse
 {
     public static void main(String[] _args)

@@ -1,3 +1,5 @@
+package java_bases;
+
 import java.util.*;
 
 public class Fonction
@@ -6,16 +8,16 @@ public class Fonction
     {
         _first = _first.toLowerCase();
         _second = _second.toLowerCase();
-
-        System.out.println(_first);
+        //_first.startsWith((_second)); true si la string commence par l'argument fourni.
         return _first.substring(0,_second.length()).equals(_second);
     }
 
     public static char[] alternatLowerCase(char[] _charTab)
     {
+
         for(int i = 0; i < _charTab.length; i++)
         {
-            if(i%2 == 0)
+            if(i % 2 == 0)
                 _charTab[i] = Character.toLowerCase(_charTab[i]);
             else
                 _charTab[i] = Character.toUpperCase(_charTab[i]);
@@ -30,6 +32,7 @@ public class Fonction
 
         for(String s : _directions)
         {
+            s.toLowerCase();
             if(s.equals("haut"))
                 result[0]+=1;
             else if (s.equals("bas"))
@@ -69,6 +72,8 @@ public class Fonction
         if(iexercice == 1)
         {
             System.out.println(isPrefix("Hugging","hug"));
+            System.out.println(isPrefix("Bonjour","oui"));
+
         }
         else if(iexercice == 2)
         {
@@ -80,7 +85,6 @@ public class Fonction
         {
             String[] s = new String[]{"haut", "haut", "gauche", "gauche", "bas"};
 
-            int[] chemin = travel(s);
             System.out.printf("[%d , %d]", travel(s)[0], travel(s)[1]);
         }
         else if (iexercice == 4)

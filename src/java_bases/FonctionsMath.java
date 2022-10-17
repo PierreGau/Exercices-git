@@ -1,3 +1,5 @@
+package java_bases;
+
 import java.util.Scanner;
 
 public class FonctionsMath

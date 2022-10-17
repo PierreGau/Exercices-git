@@ -1,3 +1,5 @@
+package java_bases;
+
 import java.util.*;
 
 public class Listes
@@ -39,6 +41,7 @@ public class Listes
 
             while(!bisDone)
             {
+
                 System.out.print("Saisissez le langage à retirer : ");
                 String laguageToRemove = keyboardImput.nextLine();
 
@@ -61,7 +64,7 @@ public class Listes
         }
         else if(iExercice == 2)
         {
-            List<String> emails = new ArrayList<String>(Arrays.asList("christian.lisangola@gmail.com","jean.paul@gmail.com","alain@gmail.com","josephine.lajoie@yahoo.fr","lydie@yahoo.fr","luise@hotmail.fr","philemon.turion@gmail.com","jules@hotmail.fr"));
+            List<String> emails = new ArrayList<String>(Arrays.asList("christian.lisangola@gmail.com","christian.lisangola@wanadoo.fr","jean.paul@gmail.com","alain@gmail.com","josephine.lajoie@yahoo.fr","lydie@yahoo.fr","luise@hotmail.fr","philemon.turion@gmail.com","jules@hotmail.fr"));
 
 
             HashMap<String, Integer> domainCount = new HashMap<String, Integer>();

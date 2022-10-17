@@ -1,3 +1,5 @@
+package java_bases;
+
 public class Main
 {
     public static void main(String[] args)

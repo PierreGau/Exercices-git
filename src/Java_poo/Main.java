@@ -4,41 +4,41 @@ public class Main
 {
     public static void main(String[] args)
     {
-////        User patoche = new User("Pierre", "Gauthier", "p.gauthier@gmail.com", "zeiubgiauz", false, 27, 88.00);
-////        System.out.println(patoche.getFirstName());
-          Scanner keyboardInput = new Scanner(System.in);
-//        System.out.print("Entrez un numero d'exercice : ");
-//        int iexercice = keyboardInput.nextInt();
-//
-//        if(iexercice == 1)
-//        {
-//            Rectangle rectangle1 = new Rectangle(5,7);
-//            System.out.println("Périmètre : " + rectangle1.getPerimeter());
-//            System.out.println("Aire : " + rectangle1.getArea());
-//
-//            System.out.printf("\n");
-//            rectangle1.setHeight(10);
-//            System.out.println("Périmètre : " + rectangle1.getPerimeter());
-//            System.out.println("Aire : " + rectangle1.getArea());
-//
-//            Rectangle rectangle2 = new Rectangle(rectangle1);
-//            System.out.println(rectangle1.equals(rectangle2));
-//
-//            rectangle2.setHeight(200);
-//            System.out.println(rectangle1.equals(rectangle2));
-//
-//        }
-//        else if(iexercice == 2)
-//        {
-//            Patient patient1 = new Patient("Pierre", "Gauthier", 27, 1.80, 88);
-//            System.out.printf("IMC : %.2f\n", patient1.calculateImc());
-//            System.out.printf("\n");
-//
-//            System.out.println(patient1);
-//
-//        }
-//        else if(iexercice == 3)
-//        {
+//        User patoche = new User("Pierre", "Gauthier", "p.gauthier@gmail.com", "zeiubgiauz", false, 27, 88.00);
+//        System.out.println(patoche.getFirstName());
+        Scanner keyboardInput = new Scanner(System.in);
+        System.out.print("Entrez un numero d'exercice : ");
+        int iexercice = keyboardInput.nextInt();
+
+        if(iexercice == 1)
+        {
+            Rectangle rectangle1 = new Rectangle(5,7);
+            System.out.println("Périmètre : " + rectangle1.getPerimeter());
+            System.out.println("Aire : " + rectangle1.getArea());
+
+            System.out.printf("\n");
+            rectangle1.setHeight(10);
+            System.out.println("Périmètre : " + rectangle1.getPerimeter());
+            System.out.println("Aire : " + rectangle1.getArea());
+
+            Rectangle rectangle2 = new Rectangle(rectangle1);
+            System.out.println(rectangle1.equals(rectangle2));
+
+            rectangle2.setHeight(200);
+            System.out.println(rectangle1.equals(rectangle2));
+
+        }
+        else if(iexercice == 2)
+        {
+            Patient patient1 = new Patient("Pierre", "Gauthier", 27, 1.80, 88);
+            System.out.printf("IMC : %.2f\n", patient1.calculateImc());
+            System.out.printf("\n");
+
+            System.out.println(patient1);
+
+        }
+        else if(iexercice == 3)
+        {
             enum Actions
             {
                 afficher,
@@ -105,6 +105,6 @@ public class Main
                 System.out.printf("\n");
 
             }while(actions != Actions.stop);
-//        }
+        }
     }
 }

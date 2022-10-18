@@ -1,12 +1,13 @@
 package JavaHeritage;
 
-public class Classe
+public abstract class Classe
 {
     private String nom;
     private int dureeDeVie;
 
-    public Classe(String nom) {
+    public Classe(String nom, int dureeDeVie) {
         this.nom = nom;
+        this.dureeDeVie = dureeDeVie;
     }
 
     public String getNom() {
@@ -25,8 +26,5 @@ public class Classe
         this.dureeDeVie = dureeDeVie;
     }
 
-    public void rencontrer()
-    {
-        System.out.println("Bonjour je suis " + nom);
-    }
+    public abstract void rencontrer();
 }
